@@ -1,0 +1,56 @@
+.text {
+    border-radius: 5px;
+    height: 36px;
+    border: 1px solid #B9B9B9;
+    outline: none;
+}
+
+.text:focus {
+    border: 1px solid #42A0FF;
+    -webkit-box-shadow: 0px 0px 3px #42A0FF;
+    -moz-box-shadow: 0px 0px 6px #42A0FF;
+    box-shadow: 0px 0px 3px #42A0FF;
+
+}
+
+@media only screen and (min-width: 999px) {
+    .a-upload {
+        padding: 35px 272px;
+    }
+}
+
+@media only screen and (max-width: 999px) {
+    .a-upload {
+        padding: 20px 0;
+        width: 95%
+    }
+}
+
+.a-upload {
+    position: relative;
+    cursor: pointer;
+    color: #555;
+    border: dashed 2px #999;
+    border-radius: 6px;
+    overflow: hidden;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+
+.a-upload input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 10%;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer
+}
+
+.a-upload:hover {
+    color: #444;
+    color: #FB6C62;
+    border-color: #42A0FF;
+    text-decoration: none
+}

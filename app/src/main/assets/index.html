@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <title>拼长图</title>
+    <script src="./LongImage/jquery.min.js"></script>
+</head>
+
+<body>
+<div>
+    <link href="./LongImage/main.css" rel="stylesheet">
+    <div style="text-align: center; font-size: 200%;">拼拼长图</div>
+    <div style="text-align:center">
+        <a class="a-upload text">
+            拖入图片 / 点选 / 框选多图，自动拼长图
+            <input accept="image/*" id="up" multiple="multiple" type="file">
+        </a>
+        <br/>
+        竖拼宽/横拼高：
+        <input class="option" id="gk" style="width:80px" type="text" value="1600">
+        <select class="option" id="geshi">
+            <option value="1">jpg</option>
+            <option value="2">png</option>
+        </select>
+        <select class="option" id="zhiliang">
+            <option value="1">质量: 100%</option>
+            <option value="0.95">质量: 95%</option>
+            <option value="0.9">质量: 90%</option>
+            <option value="0.8">质量: 80%</option>
+            <option value="0.7">质量: 70%</option>
+            <option value="0.6">质量: 60%</option>
+            <option value="0.5">质量: 50%</option>
+            <option value="0.4">质量: 40%</option>
+            <option value="0.3">质量: 30%</option>
+            <option value="0.2">质量: 20%</option>
+            <option value="0.1">质量: 10%</option>
+        </select>
+        <select class="option" id="hengshu">
+            <option value="1">竖拼长图</option>
+            <option value="2">横拼长图</option>
+        </select>
+        <select class="option" id="zhengnixu">
+            <option value="1">最早的照片在上面</option>
+            <option value="2">最晚的照片在上面</option>
+        </select>
+        <div>
+            <span id="daxiao" style="color:red"></span>
+            &nbsp;&nbsp;
+            <span id="gaokuan" style="color:red"></span>
+        </div>
+        <div id="kantu"></div>
+    </div>
+    <script src="./LongImage/baiduwsAPIs.js" type="text/javascript"></script>
+</div>
+</body>
+
+</html>
